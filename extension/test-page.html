@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Fake Checkout — Guardrail test</title></head>
+<body style="font-family:system-ui;max-width:480px;margin:60px auto">
+  <h2>Fake Shop — Checkout</h2>
+  <p>Wireless Headphones ×1</p>
+  <p><b>Order total: QAR 75.00</b></p>
+  <form>
+    <label>Card number<br><input autocomplete="cc-number" name="cardnumber" placeholder="1234 5678 9012 3456"></label><br><br>
+    <label>Expiry <input autocomplete="cc-exp" placeholder="MM/YY" size="6"></label>
+    <label>CVV <input autocomplete="cc-csc" placeholder="123" size="4"></label><br><br>
+    <button type="button">Pay QAR 75.00</button>
+  </form>
+  <p style="color:#777">The guardrail banner should appear at the top, red: 75 QAR is over the 60 QAR monthly limit.</p>
+</body>
+</html>

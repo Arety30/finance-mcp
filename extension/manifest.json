@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Finance Guardrail",
+  "version": "1.0",
+  "description": "Checks payment forms against Abrar's local finance-mcp guardrails before the card is used.",
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": ["http://127.0.0.1:8975/*"]
+}

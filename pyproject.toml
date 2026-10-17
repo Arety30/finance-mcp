@@ -1,0 +1,10 @@
+[project]
+name = "finance-mcp"
+version = "0.1.0"
+description = "Expense-tracking MCP for ChatGPT (cards, budgets, spending ledger)"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.10,<2",
+    "starlette>=0.40",
+    "uvicorn>=0.30",
+]
